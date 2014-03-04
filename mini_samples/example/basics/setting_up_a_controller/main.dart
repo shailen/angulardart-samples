@@ -9,7 +9,7 @@
 import 'dart:mirrors';
 
 import 'package:angular/angular.dart';
-import './my_controller.dart' show MyController;
+import 'my_controller.dart' show MyController;
 
 main() {
   ngBootstrap(module: new Module()
