@@ -11,7 +11,7 @@ import 'package:angular/angular.dart';
   publishAs: 'ctrl'
 )
 class MyController {
-  List<String> fruits = ['apple', 'banana', 'kiwi', 'mango', 'kumquat'];
+  List<String> fruits = ['apple', 'banana', 'mango'];
   String favorite;
 
   MyController() {

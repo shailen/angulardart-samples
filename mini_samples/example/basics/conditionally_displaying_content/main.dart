@@ -7,7 +7,10 @@
   targets: const ['my_controller'],
   override: '*')
 import 'dart:mirrors';
+
 import 'package:angular/angular.dart';
+import 'package:di/di.dart';
+
 import 'my_controller.dart' show MyController;
 
 main() {

@@ -11,10 +11,10 @@ import 'package:angular/angular.dart';
     publishAs: 'ctrl'
 )
 class MyController {
-  String text = "Otto";
+  String text = '';
 
   bool get isPalindrome {
-    if (text.isEmpty) return false;
+    if (text.isEmpty || text.length == 1) return false;
 
     var buffer = new StringBuffer();
     var lcText = text.toLowerCase();
