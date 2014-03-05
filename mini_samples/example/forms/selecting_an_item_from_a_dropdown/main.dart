@@ -7,21 +7,10 @@
   targets: const [MyController],
   override: '*')
 import 'dart:mirrors';
+
 import 'package:angular/angular.dart';
 
-
-@NgController(
-  selector: '[my-controller]',
-  publishAs: 'ctrl'
-)
-class MyController {
-  List<String> fruits = ['apple', 'banana', 'kiwi'];
-  String favorite;
-
-  MyController() {
-    favorite = fruits[1];
-  }
-}
+import 'my_controller.dart' show MyController;
 
 main() {
   ngBootstrap(module: new Module()..type(MyController));

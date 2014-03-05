@@ -7,24 +7,10 @@
   targets: const [MyController],
   override: '*')
 import 'dart:mirrors';
+
 import 'package:angular/angular.dart';
 
-
-@NgController(
-  selector: '[my-controller]',
-  publishAs: 'ctrl'
-)
-class MyController {
-  List<Map> fruits = <Map>[
-    {'name': 'apple', 'selected': true},
-    {'name': 'banana', 'selected': true},
-    {'name': 'kiwi', 'selected': false}
-  ];
-
-  List<Map> get selectedFruits {
-    return fruits.where((Map fruit) => fruit['selected']).toList();
-  }
-}
+import 'my_controller.dart' show MyController;
 
 main() {
   ngBootstrap(module: new Module()..type(MyController));
