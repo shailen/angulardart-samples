@@ -2,17 +2,14 @@ library my_router;
 
 import 'package:angular/angular.dart';
 
-class MyRouteInitializer implements RouteInitializer {
-  init(Router router, ViewFactory view) {
-    router.root
-      ..addRoute(
-          name: 'hello',
-          path: '/hello',
-          enter: view('views/hello.html'))
-      ..addRoute(
-          name: 'default',
-          path: '/default',
-          defaultRoute: true,
-          enter: view('views/default.html'));
-  }
+void myRouteInitializer(Router router, ViewFactory views) {
+  views.configure({
+    'hello': ngRoute(
+        path: '/hello',
+        enter: views('views/hello.html')),
+    'default': ngRoute(
+        path: '/default',
+        defaultRoute: true,
+        enter: views('views/default.html'))
+  });
 }
