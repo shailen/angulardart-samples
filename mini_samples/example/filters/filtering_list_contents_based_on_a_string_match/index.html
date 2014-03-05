@@ -12,7 +12,8 @@ BSD-style license that can be found in the LICENSE file.
   <body>
     <div class="well">
       <div my-controller>
-        <input type="text" ng-model="ctrl.selection"><br>
+        <input type="text" ng-model="ctrl.selection" 
+            placeholder="Type something to filter the list"><br>
         <div ng-repeat="fruit in ctrl.fruits | filter:ctrl.selection">
           {{fruit}}
         </div>

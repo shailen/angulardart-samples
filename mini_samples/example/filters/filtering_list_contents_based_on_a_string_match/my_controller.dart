@@ -12,5 +12,6 @@ import 'package:angular/angular.dart';
 )
 class MyController {
   String selection;
-  List<String> fruits = ['apple', 'banana', 'kiwi', 'mango', 'orange'];
+  List<String> fruits = ['apple', 'banana', 'guava', 'kiwi', 'mango',
+                         'orange', 'peach', 'pear', 'pluot'];
 }

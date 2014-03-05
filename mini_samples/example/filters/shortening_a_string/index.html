@@ -17,6 +17,7 @@ BSD-style license that can be found in the LICENSE file.
           Changing the value to -3 prints the *last* three letters ('day') for
           each day.
         -->
+        <h3>Days of week truncated to three letters using a filter</h3>
         <div ng-repeat="day in ctrl.weekDays">
           {{day | limitTo: 3}}.
         </div>

@@ -24,7 +24,7 @@ class MyController {
     new User('Otto'),
   ];
 
-  // Cool names are palindromes!
+  // Palindromes make cool names!
   bool isCoolName(user) {
     if (user.name.isEmpty) return false;
 

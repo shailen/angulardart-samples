@@ -16,6 +16,7 @@ BSD-style license that can be found in the LICENSE file.
           Prints the first three days of the week.  Changing the limit 
           value to -3 will print the *last* three days of the week.
         -->
+        <h3>Listing only the first three days of the week using a filter</h3>
         <div ng-repeat="item in ctrl.weekDays | limitTo: 3">
           {{item}}
         </div>

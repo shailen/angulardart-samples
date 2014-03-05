@@ -12,6 +12,7 @@ BSD-style license that can be found in the LICENSE file.
   <body>
     <div class="well">
       <div my-controller>
+        <h3>Ordering users by first name</h3>
         <div ng-repeat="user in ctrl.users | orderBy: 'firstName'">
           {{user.firstName}} {{user.lastName}}
         </div>

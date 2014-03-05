@@ -12,6 +12,7 @@ BSD-style license that can be found in the LICENSE file.
   <body>
     <div class="well">
       <div my-controller>
+        <h3>Names that are palindromes</h3>
         <div ng-repeat="user in ctrl.users | filter:ctrl.isCoolName">
           {{user.name}}
         </div>
