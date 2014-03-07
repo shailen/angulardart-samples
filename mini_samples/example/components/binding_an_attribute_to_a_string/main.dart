@@ -7,10 +7,11 @@
   targets: const ['my_component'],
   override: '*')
 import 'dart:mirrors';
+
 import 'package:angular/angular.dart';
-import './my_component.dart';
+
+import 'my_component.dart' show MyComponent;
 
 main() {
-  ngBootstrap(module: new Module()
-      ..type(MyComponent));
+  ngBootstrap(module: new Module()..type(MyComponent));
 }
