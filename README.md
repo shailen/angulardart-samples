@@ -1,4 +1,4 @@
 angulardart-samples
 ===================
 
-AngularDart sample code.
+Angulardart sample code.
