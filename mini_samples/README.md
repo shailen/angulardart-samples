@@ -53,5 +53,3 @@ Short snippets of code to help you become productive with Angulardart.
 ### Using Polymer elements
 * [Using a Polymer element with an Angular controller](example/using_polymer_elements/using_a_polymer_element_with_an_angular_controller)
 
-##  Dart I/O and command-line apps
-* [Introduction](example/dart_io/introduction.md)
