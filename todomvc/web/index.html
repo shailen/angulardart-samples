@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="base.css">
+  </head>
+  <body todo-controller ng-cloak>
+    <section id="todoapp">
+      <header id="header">
+        <h1>todos</h1>
+        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+      </header>
+      <section id="main">
+        <input id="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list">
+          <li ng-repeat="todo in ctrl.todos">
+            <div class="view">
+            <input class="toggle" type="checkbox">
+            <label>{{todo.title}}</label>
+            <button class="destroy"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <footer id="info">
+      <p>Double-click to edit a todo</p>
+      <p>Written by <a href="https://github.com/shailen">Shailen Tuli</a></p>
+      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+    <script type="application/dart" src="main.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
