@@ -9,7 +9,7 @@ import 'dart:html';
 
 @NgComponent(
     selector: 'my-component',
-    templateUrl: './my_component.html',
+    templateUrl: 'my_component.html',
     publishAs: 'cmp'
 )
 class MyComponent implements NgShadowRootAware {

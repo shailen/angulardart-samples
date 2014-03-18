@@ -12,15 +12,14 @@ BSD-style license that can be found in the LICENSE file.
   <body>
     <div my-controller>
       <div class="outer">
-        <div class="well" ng-click="ctrl.handleCustomEvent($event)">
-          <component-one></component-one>
-        </div>
         <div class="well">
-          <component-two text='ctrl.text'></component-two>
+          <parent-component>
+            <child-component></child-component>
+          </parent-component>
         </div>
       </div>
     </div>
-    
+
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
   </body>

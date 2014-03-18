@@ -2,17 +2,20 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library component_two;
+library child_component;
 
+import 'dart:html';
 import 'package:angular/angular.dart';
 
 @NgComponent(
-    selector: 'component-two',
-    templateUrl: './component_two.html',
+    selector: 'child-component',
+    templateUrl: 'child_component.html',
     publishAs: 'cmp',
     applyAuthorStyles: true
 )
-class ComponentTwo {
-  @NgTwoWay('text')
-  String text;
+class ChildComponent {
+  dispatchIt(Event e) {
+    e.preventDefault();
+    e.target.dispatchEvent(new CustomEvent('foo-event'));
+  }
 }

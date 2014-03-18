@@ -8,13 +8,11 @@
   override: '*')
 import 'dart:mirrors';
 import 'package:angular/angular.dart';
-import './my_controller.dart';
-import './component_one.dart';
-import './component_two.dart';
+import 'parent_component.dart';
+import 'child_component.dart';
 
 main() {
   ngBootstrap(module: new Module()
-      ..type(MyController)
-      ..type(ComponentOne)
-      ..type(ComponentTwo));
+      ..type(ParentComponent)
+      ..type(ChildComponent));
 }
