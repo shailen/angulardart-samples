@@ -1,9 +1,0 @@
-name: todomvc
-description: Examples that teach the use of Dart through short, directed code snippets.
-dependencies:
-  angular: 0.9.8
-  browser: any
-  js: any
-  shadow_dom: any
-dev_dependencies:
-  unittest: any
