@@ -28,15 +28,14 @@ BSD-style license that can be found in the LICENSE file.
     <div class="container" my-controller>
       <form name="signup_form" novalidate ng-submit="ctrl.signupForm()">
         <div class="row">
-          <input type="text"
-              placeholder="Username (must be between 4 and 10 characters)"
+          <input placeholder="Username (must be between 4 and 10 characters)"
               name="username"
               ng-model="ctrl.username"
               required
               ng-minlength=4
               ng-maxlength=10 />
         </div>
-        <button type="submit" class="button radius">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
     <script type="application/dart" src="main.dart"></script>
