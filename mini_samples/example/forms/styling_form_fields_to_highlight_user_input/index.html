@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+for details. All rights reserved. Use of this source code is governed by a
+BSD-style license that can be found in the LICENSE file.
+-->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../common.css">
+
+    <style>
+
+      .ng-pristine.ng-invalid {
+        color: #333;
+      }
+
+      .ng-dirty.ng-invalid {
+        color: red;
+      }
+
+      .ng-dirty.ng-valid {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" my-controller>
+      <form name="signup_form" novalidate ng-submit="ctrl.signupForm()">
+        <div class="row">
+          <input type="text"
+              placeholder="Username (must be between 4 and 10 characters)"
+              name="username"
+              ng-model="ctrl.username"
+              required
+              ng-minlength=4
+              ng-maxlength=10 />
+        </div>
+        <button type="submit" class="button radius">Submit</button>
+      </form>
+    </div>
+    <script type="application/dart" src="main.dart"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
+  </body>
+</html>
