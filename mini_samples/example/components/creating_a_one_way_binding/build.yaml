@@ -1,4 +1,6 @@
-description: Sample to demonstrate the use of a one way data binding.
+title: Using one way data binding
+description: This sample shows you how to create a one way binding between a
+    controller variable and a component field
 files:
   my_controller.dart
   my_component.dart
