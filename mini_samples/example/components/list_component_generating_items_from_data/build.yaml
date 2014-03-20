@@ -1,0 +1,15 @@
+title: Generating List Items from Data
+description: This sample shows you how to use `ng-repeat` to
+    generate items for a custom list component.
+files:
+  index.dart
+  index.html
+see-also:
+  - title : Sample: Creating a component
+    url   : creating_a_component
+  - title : ng-repeat documentation
+    url   : http://example.com
+  - title : template documentation
+    url   : http://example.com
+  - title : component documentation
+    url   : http://example.com

@@ -13,6 +13,12 @@ class Item {
   Item(this.name);
 }
 
+// include START
+///The component defines a `my-component` element
+///that creates a bulleted list.
+///The `ng-repeat` directive
+///creates a list item value every value in the
+///MyComponent class's `values` field.
 @NgComponent(
     selector: 'my-component',
     publishAs: 'ctrl',
@@ -26,6 +32,7 @@ class MyComponent {
     print('MyComponent');
   }
 }
+// include END
 
 class MyAppModule extends Module {
   MyAppModule() {
