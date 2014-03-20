@@ -18,7 +18,6 @@ class Item {
     publishAs: 'ctrl',
     template: '''<ul><li ng-repeat="value in ctrl.values">{{value.name}}</li></ul>'''
 )
-
 class MyComponent {
   List<Item> values = [new Item('1'), new Item('2'), new Item('3'), new Item('4')];
 
