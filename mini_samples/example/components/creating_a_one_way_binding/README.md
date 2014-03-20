@@ -2,7 +2,8 @@
 
 # Using one way data binding.
 
-Foo foo bar bar
+This sample shows you how to create a one way binding between a controller
+variable and a component field
 
 The controller defines a single `text` variable:
 
@@ -15,9 +16,9 @@ The controller defines a single `text` variable:
       String text = 'Angular Dart';
     }
 
-The component defines a `text` variable and uses the `@NgOneWay` 
+The component defines a `text` variable and uses the `@NgOneWay`
 annotation to create a one way binding:
- 
+
     // file: my_component.dart
     @NgComponent(
         selector: 'my-component',
@@ -32,8 +33,8 @@ annotation to create a one way binding:
 
 You can see the one way binding at work by running the sample. Notice that
 changing the value of the `<input>` bound to the controller's `text` changes
-the value of the `<input>` inside the component, but the reverse is not the 
-case: 
+the value of the `<input>` inside the component, but the reverse is not the
+case:
 
     // file: index.html
     <div my-controller>
