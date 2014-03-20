@@ -8,7 +8,7 @@ import 'package:angular/angular.dart';
 
 @NgComponent(
     selector: 'my-component',
-    templateUrl: './my_component.html',
+    templateUrl: 'my_component.html',
     publishAs: 'cmp',
     applyAuthorStyles: true
 )

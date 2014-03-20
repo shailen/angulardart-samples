@@ -6,14 +6,13 @@ library my_controller;
 
 import 'package:angular/angular.dart';
 
+
+// include START
+/// The controller defines a single `text` variable.
 @NgController(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )
 class MyController {
   String text = 'Angular Dart';
-
-  reverseText() {
-    text = new String.fromCharCodes(text.codeUnits.reversed);
-  }
 }

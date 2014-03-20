@@ -1,0 +1,5 @@
+description: Sample to demonstrate the use of a one way data binding.
+files:
+  my_controller.dart
+  my_component.dart
+  index.html
