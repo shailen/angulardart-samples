@@ -49,6 +49,10 @@ BSD-style license that can be found in the LICENSE file.
               ng-model="ctrl.email"
               required>
         </div>
+        <div class="row" ng-show="signup_form['email'].dirty &&
+            signup_form['email'].invalid">
+          Must be a valid email address
+        </div>
 
         <div class="row">
           <input type="number"
@@ -73,11 +77,6 @@ BSD-style license that can be found in the LICENSE file.
         <div class="row" ng-show="signup_form['url'].dirty &&
             signup_form['url'].invalid">
           Valid url required (perhaps you forgot the 'http' or 'https'?)
-        </div>
-
-        <div class="row" ng-show="signup_form['email'].dirty &&
-            signup_form['email'].invalid">
-          Must be a valid email address
         </div>
 
         <button type="submit">Submit</button>
