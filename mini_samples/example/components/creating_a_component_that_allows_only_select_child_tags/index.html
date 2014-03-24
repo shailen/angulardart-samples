@@ -9,17 +9,17 @@ BSD-style license that can be found in the LICENSE file.
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
   </head>
-  <body>
+  <body ng-cloak>
     <div class="well">
-      <my-component>                                       
-        <div id="foo">Child #foo content</div>     
+      <my-component>
+        <div id="foo">Child #foo content</div>
         <div class="bar">Child .bar content</div>
-  
+
         <!-- Not an approved class, so not displayed. -->
-        <div class="baz">.baz content</div>                                       
+        <div class="baz">.baz content</div>
       </my-component>
     </div>
-    
+
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
   </body>

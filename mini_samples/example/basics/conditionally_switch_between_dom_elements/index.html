@@ -9,7 +9,7 @@ BSD-style license that can be found in the LICENSE file.
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
   </head>
-  <body>
+  <body ng-cloak>
     <div my-controller>
       <div class="well">
         <select ng-model="ctrl.favorite">
@@ -18,7 +18,7 @@ BSD-style license that can be found in the LICENSE file.
           </option>
         </select>
       </div>
-     
+
       <h2>{{ctrl.favorite}}</h2>
       <div ng-switch="ctrl.favorite">
         <div ng-switch-when="apple">Keeps the doctor away.</div>

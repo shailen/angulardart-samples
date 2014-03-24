@@ -9,10 +9,10 @@ BSD-style license that can be found in the LICENSE file.
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
   </head>
-  <body>
+  <body ng-cloak>
     <div class="well">
       <div my-controller>
-        <input type="text" ng-model="ctrl.selection" 
+        <input type="text" ng-model="ctrl.selection"
             placeholder="Type something to filter the list"><br>
         <div ng-repeat="fruit in ctrl.fruits | filter:ctrl.selection">
           {{fruit}}

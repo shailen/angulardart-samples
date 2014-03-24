@@ -9,9 +9,9 @@ BSD-style license that can be found in the LICENSE file.
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
   </head>
-  <body>
-    <div my-controller>  
-      <div class="well">          
+  <body ng-cloak>
+    <div my-controller>
+      <div class="well">
         <div ng-repeat="fruit in ctrl.fruits">
           <input type="radio"
               name="fruits"
@@ -22,7 +22,7 @@ BSD-style license that can be found in the LICENSE file.
       </div>
       <div>{{ctrl.favorite}} selected</div>
     </div>
-    
+
     <script type="application/dart" src="main.dart"></script>
     <script type="text/javascript" src="packages/browser/dart.js"></script>
   </body>
