@@ -6,6 +6,6 @@ dependencies:
   js: any
   polymer: any
   shadow_dom: any
-
+  yaml: any
 dev_dependencies:
   unittest: any
