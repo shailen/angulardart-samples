@@ -12,7 +12,7 @@ BSD-style license that can be found in the LICENSE file.
   <body ng-cloak>
     <div class="well">
       <div my-controller>
-        <div ng-repeat="fruit in ctrl.fruits">{{fruit}}</div>
+        <div ng-repeat="fruit in ctrl.fruits">{{$index + 1}}: {{fruit}}</div>
       </div>
     </div>
     <script type="application/dart" src="main.dart"></script>
