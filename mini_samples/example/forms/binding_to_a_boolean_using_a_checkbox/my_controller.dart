@@ -9,5 +9,5 @@ import 'package:angular/angular.dart';
   publishAs: 'ctrl'
 )
 class MyController {
-  bool show = false;
+  bool show = true;
 }
