@@ -23,10 +23,10 @@ class MyController implements NgDetachAware {
   Router router;
 
   MyController(this.router) {
-    activeHandle = router.root.getRoute(ACTIVE).newHandle()
+    activeHandle = router.root.findRoute(ACTIVE).newHandle()
         ..onEnter.listen((_) => myVar = ACTIVE);
 
-    completedHandle = router.root.getRoute(COMPLETED).newHandle()
+    completedHandle = router.root.findRoute(COMPLETED).newHandle()
         ..onEnter.listen((_) => myVar = COMPLETED);
   }
 

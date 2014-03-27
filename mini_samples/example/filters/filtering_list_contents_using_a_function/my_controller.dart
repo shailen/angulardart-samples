@@ -25,7 +25,7 @@ class MyController {
   ];
 
   // Palindromes make cool names!
-  bool isCoolName(user) {
+  bool isPalindrome(user) {
     if (user.name.isEmpty) return false;
 
     var buffer = new StringBuffer();

@@ -2,7 +2,7 @@ library my_router;
 
 import 'package:angular/angular.dart';
 
-void myRouteInitializer (Router router, ViewFactory views) {
+void myRouteInitializer (Router router, RouteViewFactory views) {
   views.configure({
     'articles': ngRoute(
         path: '/articles',

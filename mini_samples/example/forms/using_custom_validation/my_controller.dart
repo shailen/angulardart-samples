@@ -20,9 +20,8 @@ class MyController implements NgAttachAware {
 
   attach() {
     NgForm form = scope.context['signup_form'];
-
     querySelector('#username').onKeyUp.listen((event) {
-      if (form.errors.keys.contains('uniqueness-constraint')) {
+      if (form.errorStates.keys.contains('uniqueness-constraint')) {
         errorMessage = "That name has already been taken";
       } else {
         errorMessage= '';

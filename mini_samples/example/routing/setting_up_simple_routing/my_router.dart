@@ -2,7 +2,7 @@ library my_router;
 
 import 'package:angular/angular.dart';
 
-myRouteInitializer(Router router, ViewFactory views) {
+myRouteInitializer(Router router, RouteViewFactory views) {
   views.configure({
     'hello': ngRoute(
         path: '/hello',

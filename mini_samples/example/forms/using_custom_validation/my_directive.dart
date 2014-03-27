@@ -4,7 +4,7 @@ import 'package:angular/angular.dart';
 
 @NgDirective(
     selector: '[ensure-unique]')
-class MyCustomFormValidator implements NgValidatable {
+class MyCustomFormValidator implements NgValidator {
   MyCustomFormValidator(NgModel ngModel) {
     ngModel.addValidator(this);
   }
