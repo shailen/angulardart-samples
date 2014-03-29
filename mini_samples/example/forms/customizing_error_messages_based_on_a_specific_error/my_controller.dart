@@ -44,7 +44,7 @@ class MyController implements NgAttachAware {
     NgForm form = scope.context['signup_form'];
 
     querySelector('#username').onKeyUp.listen((event) {
-      errorKeys = form.errors.keys;
+      errorKeys = form.errorStates.keys;
     });
   }
 
