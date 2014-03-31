@@ -31,9 +31,6 @@ for file in `find . -name "*dart"`
     else
       echo "$file: Unknown exit code: $exit_code."
     fi
-    # Remove the output directory so that subsequent test runs will still see
-    # the warnings and errors.
-    rm -rf out/
   done
 
 echo
