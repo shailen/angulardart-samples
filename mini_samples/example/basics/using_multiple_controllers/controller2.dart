@@ -6,10 +6,10 @@ library controller2;
 
 import 'package:angular/angular.dart';
 
-@NgController(
+@Controller(
     selector: '[controller-two]',
     publishAs: 'ctrl'
 )
 class ControllerTwo {
-  String text = "Bar";
+  String text = "Bar (controller-two)";
 }

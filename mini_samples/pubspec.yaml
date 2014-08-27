@@ -1,10 +1,9 @@
 name: mini_samples
 description: Examples that teach the use of Dart through short, directed code snippets.
 dependencies:
-  angular: 0.9.10
+  angular: 0.13.0
   browser: any
   js: any
-  polymer: any
   shadow_dom: any
   yaml: any
 dev_dependencies:
