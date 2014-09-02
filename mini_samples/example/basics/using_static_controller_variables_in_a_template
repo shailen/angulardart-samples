@@ -4,7 +4,7 @@ Templates expect instance variables. To get the value of a _static_ variable
 in the controller in a template, return that value via a getter. Here is an
 example:
 
-    @NgController(
+    @Controller(
         selector: '[my-controller]',
         publishAs: 'ctrl'
     )

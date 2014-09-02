@@ -12,7 +12,7 @@ class User {
   User(this.name, [this.registered=false]);
 }
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )

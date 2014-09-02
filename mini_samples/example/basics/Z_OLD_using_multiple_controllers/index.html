@@ -4,20 +4,22 @@ Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 for details. All rights reserved. Use of this source code is governed by a
 BSD-style license that can be found in the LICENSE file.
 -->
-<html>
+<html ng-app>
   <head>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
-    <style>
-      .palindrome {
-        font-weight: bold;
-        font-style: italic;
-      }
-    </style>
   </head>
   <body ng-cloak>
     <div class="well">
-      <input type="text" is-palindrome>
+      <div controller-one>
+        <p>Inside controller-one, text = {{ctrl.text}}</p>
+      </div>
+      <div controller-two>
+        <p>Inside controller-two, text = {{ctrl.text}}</p>
+      </div>
     </div>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>

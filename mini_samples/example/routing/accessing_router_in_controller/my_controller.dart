@@ -7,11 +7,11 @@ library my_controller;
 import 'package:angular/angular.dart';
 import 'book.dart' show Book;
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )
-class MyController implements NgDetachAware {
+class MyController implements DetachAware {
   RouteHandle route;
   String bookId;
 

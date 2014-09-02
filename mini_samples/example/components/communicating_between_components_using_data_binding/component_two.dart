@@ -6,11 +6,10 @@ library component_two;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'component-two',
     templateUrl: './component_two.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+    publishAs: 'cmp'
 )
 class ComponentTwo {
   @NgTwoWay('text')

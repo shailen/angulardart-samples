@@ -6,13 +6,12 @@ library parent_component;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'parent-component',
     templateUrl: 'parent_component.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+    publishAs: 'cmp'
 )
-class ParentComponent implements NgShadowRootAware {
+class ParentComponent implements ShadowRootAware {
   onShadowRoot(shadowRoot) {
     shadowRoot.on['foo-event'].listen((event) {
       shadowRoot.querySelector('#my-div')

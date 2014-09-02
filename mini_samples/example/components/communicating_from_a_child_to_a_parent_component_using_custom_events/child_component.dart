@@ -7,11 +7,10 @@ library child_component;
 import 'dart:html';
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'child-component',
     templateUrl: 'child_component.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+    publishAs: 'cmp'
 )
 class ChildComponent {
   dispatchIt(Event e) {

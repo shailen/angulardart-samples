@@ -2,15 +2,17 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library my_controller;
+library my_component;
 
 import 'package:angular/angular.dart';
 
-@NgController(
-    selector: '[my-controller]',
-    publishAs: 'ctrl'
+@Component(
+    selector: 'my-component',
+    templateUrl: 'my_component.html',
+    publishAs: 'cmp',
+    applyAuthorStyles: true
 )
-class MyController {
-  String text1 = "Text outside component is green.";
-  String text2 = "Text inside component is also green.";
+class MyComponent {
+  @NgAttr('text')
+  String text;
 }

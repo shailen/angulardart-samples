@@ -9,11 +9,10 @@ import 'package:angular/angular.dart';
 // include START
 /// The component defines a `text` variable and uses the `@NgOneWay`
 /// annotation to create a one way binding.
-@NgComponent(
+@Component(
     selector: 'my-component',
     templateUrl: 'my_component.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+    publishAs: 'cmp'
 )
 class MyComponent {
   @NgOneWay('text')

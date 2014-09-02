@@ -6,11 +6,11 @@ library my_controller;
 
 import 'package:angular/angular.dart';
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )
-class MyController implements NgDetachAware {
+class MyController implements DetachAware {
   static const ACTIVE = 'active';
   static const COMPLETED = 'completed';
   String get active => ACTIVE;

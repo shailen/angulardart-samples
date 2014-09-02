@@ -4,25 +4,20 @@ Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 for details. All rights reserved. Use of this source code is governed by a
 BSD-style license that can be found in the LICENSE file.
 -->
-<html>
+<html ng-app>
   <head>
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
+    <style>
+      .palindrome {
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body ng-cloak>
-    <div>
-      <div class="well">
-        <span><a href="#/active">Active</a></span> |
-        <span><a href="#/completed">Completed</a></span>
-      </div>
-
-      <ng-view>
-        <section my-controller>
-          <span ng-if="ctrl.myVar != null && ctrl.myVar.isNotEmpty">
-            myVar = {{ctrl.myVar}}
-          </span>
-        </section>
-      </ng-view>
+    <div class="well">
+      <input type="text" is-palindrome>
     </div>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>

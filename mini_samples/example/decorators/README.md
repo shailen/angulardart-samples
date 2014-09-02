@@ -1,0 +1,1 @@
+Changed name of the directory from `directives` to `decorators`.

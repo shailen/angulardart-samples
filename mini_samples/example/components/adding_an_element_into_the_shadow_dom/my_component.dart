@@ -7,12 +7,12 @@ library my_component;
 import 'package:angular/angular.dart';
 import 'dart:html';
 
-@NgComponent(
+@Component(
     selector: 'my-component',
     templateUrl: 'my_component.html',
     publishAs: 'cmp'
 )
-class MyComponent implements NgShadowRootAware {
+class MyComponent implements ShadowRootAware {
   void onShadowRoot(ShadowRoot shadowRoot) {
     shadowRoot.querySelector('#myDiv').children.add(
       new ParagraphElement()..text = 'Dynamically added content'

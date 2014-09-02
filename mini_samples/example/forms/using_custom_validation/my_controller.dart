@@ -7,11 +7,11 @@ library my_controller;
 import 'package:angular/angular.dart';
 import 'dart:html' show querySelector;
 
-@NgController(
+@Controller(
   selector: '[my-controller]',
   publishAs: 'ctrl'
 )
-class MyController implements NgAttachAware {
+class MyController implements AttachAware {
   String username;
   String errorMessage = '';
   Scope scope;

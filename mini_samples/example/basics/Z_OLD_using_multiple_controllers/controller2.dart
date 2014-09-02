@@ -2,17 +2,14 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library my_component;
+library controller2;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
-    selector: 'my-component',
-    templateUrl: 'my_component.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+@Controller(
+    selector: '[controller-two]',
+    publishAs: 'ctrl'
 )
-class MyComponent {
-  @NgAttr('text')
-  String text;
+class ControllerTwo {
+  String text = "Bar (controller-two)";
 }

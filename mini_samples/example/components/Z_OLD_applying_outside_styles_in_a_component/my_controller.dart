@@ -2,14 +2,15 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library controller2;
+library my_controller;
 
 import 'package:angular/angular.dart';
 
-@NgController(
-    selector: '[controller-two]',
+@Controller(
+    selector: '[my-controller]',
     publishAs: 'ctrl'
 )
-class ControllerTwo {
-  String text = "Bar";
+class MyController {
+  String text1 = "Text outside component is green.";
+  String text2 = "Text inside component is also green.";
 }
