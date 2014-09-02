@@ -6,11 +6,11 @@ import 'package:angular/angular.dart';
 import 'dart:html';
 
 
-@NgController(
+@Controller(
   selector: '[my-controller]',
   publishAs: 'ctrl'
 )
-class MyController implements NgAttachAware {
+class MyController implements AttachAware {
   String username;
   String errorMessage = '';
   Scope scope;
@@ -21,13 +21,13 @@ class MyController implements NgAttachAware {
   static const MAXLENGTH_CHARS = 8;
   num get maxlengthChars => MAXLENGTH_CHARS;
 
-  static const REQUIRED = 'required';
+  static const REQUIRED = 'ng-required';
   String get required => REQUIRED;
 
-  static const MINLENGTH = "minlength";
+  static const MINLENGTH = 'ng-minlength';
   String get minlength => MINLENGTH;
 
-  static const MAXLENGTH = 'maxlength';
+  static const MAXLENGTH = 'ng-maxlength';
   String get maxlength => MAXLENGTH;
 
   static const Map<String, String> ERRORS_MAP = const {
@@ -44,7 +44,7 @@ class MyController implements NgAttachAware {
     NgForm form = scope.context['signup_form'];
 
     querySelector('#username').onKeyUp.listen((event) {
-      errorKeys = form.errors.keys;
+      errorKeys = form.errorStates.keys;
     });
   }
 

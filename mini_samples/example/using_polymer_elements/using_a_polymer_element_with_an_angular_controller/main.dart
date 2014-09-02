@@ -1,15 +1,19 @@
-import 'package:polymer/polymer.dart';
+// Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
 import 'package:angular/angular.dart';
-import './my_controller.dart' show MyController;
+import 'package:angular/application_factory.dart';
+import 'my_controller.dart' show MyController;
 
-// Temporary, please follow https://github.com/angular/angular.dart/issues/476
-@MirrorsUsed(
-targets: const ['my_controller'],
-override: '*')
-import 'dart:mirrors';
+class MyAppModule extends Module {
+  MyAppModule() {
+    bind(MyController);
+  }
+}
 
-void main() {
-  initPolymer();
-  ngBootstrap(module: new Module()
-  ..type(MyController));
+main() {
+  applicationFactory()
+      .addModule(new MyAppModule())
+      .run();
 }

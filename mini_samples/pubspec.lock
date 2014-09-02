@@ -4,11 +4,11 @@ packages:
   analyzer:
     description: analyzer
     source: hosted
-    version: "0.18.0"
+    version: "0.15.7"
   angular:
     description: angular
     source: hosted
-    version: "0.13.0"
+    version: "0.14.0"
   args:
     description: args
     source: hosted
@@ -16,7 +16,7 @@ packages:
   barback:
     description: barback
     source: hosted
-    version: "0.14.0+3"
+    version: "0.14.2"
   browser:
     description: browser
     source: hosted
@@ -29,6 +29,10 @@ packages:
     description: collection
     source: hosted
     version: "0.9.4"
+  csslib:
+    description: csslib
+    source: hosted
+    version: "0.11.0+2"
   di:
     description: di
     source: hosted
@@ -36,15 +40,11 @@ packages:
   html5lib:
     description: html5lib
     source: hosted
-    version: "0.10.0"
+    version: "0.12.0"
   intl:
     description: intl
     source: hosted
-    version: "0.8.10+4"
-  js:
-    description: js
-    source: hosted
-    version: "0.2.2"
+    version: "0.11.6"
   logging:
     description: logging
     source: hosted
@@ -53,10 +53,10 @@ packages:
     description: matcher
     source: hosted
     version: "0.11.1"
-  meta:
-    description: meta
+  observe:
+    description: observe
     source: hosted
-    version: "0.8.8"
+    version: "0.11.0+5"
   path:
     description: path
     source: hosted
@@ -65,6 +65,18 @@ packages:
     description: perf_api
     source: hosted
     version: "0.0.9"
+  polymer:
+    description: polymer
+    source: hosted
+    version: "0.12.0"
+  polymer_expressions:
+    description: polymer_expressions
+    source: hosted
+    version: "0.12.0+1"
+  pool:
+    description: pool
+    source: hosted
+    version: "1.0.1"
   route_hierarchical:
     description: route_hierarchical
     source: hosted
@@ -73,6 +85,10 @@ packages:
     description: shadow_dom
     source: hosted
     version: "0.10.0"
+  smoke:
+    description: smoke
+    source: hosted
+    version: "0.2.1"
   source_maps:
     description: source_maps
     source: hosted
@@ -84,15 +100,15 @@ packages:
   stack_trace:
     description: stack_trace
     source: hosted
-    version: "0.9.3+2"
+    version: "1.0.2"
   string_scanner:
     description: string_scanner
     source: hosted
     version: "0.1.0"
-  typed_mock:
-    description: typed_mock
+  template_binding:
+    description: template_binding
     source: hosted
-    version: "0.0.4"
+    version: "0.12.1"
   unittest:
     description: unittest
     source: hosted
@@ -104,8 +120,8 @@ packages:
   web_components:
     description: web_components
     source: hosted
-    version: "0.3.5+1"
+    version: "0.5.0+1"
   yaml:
     description: yaml
     source: hosted
-    version: "2.0.0"
+    version: "2.0.1+1"

@@ -7,7 +7,7 @@ library book_component;
 import 'package:angular/angular.dart';
 import 'book.dart' show Book;
 
-@NgComponent(
+@Component(
     selector: 'book-component',
     templateUrl: './book_component.html',
     publishAs: 'cmp'

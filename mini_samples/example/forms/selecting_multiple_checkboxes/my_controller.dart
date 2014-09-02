@@ -4,7 +4,7 @@
 
 import 'package:angular/angular.dart';
 
-@NgController(
+@Controller(
   selector: '[my-controller]',
   publishAs: 'ctrl'
 )
@@ -14,8 +14,4 @@ class MyController {
     {'name': 'banana', 'selected': true},
     {'name': 'kiwi', 'selected': false}
   ];
-
-  List<Map> get selectedFruits {
-    return fruits.where((Map fruit) => fruit['selected']).toList();
-  }
 }

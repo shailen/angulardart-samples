@@ -4,25 +4,20 @@ Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 for details. All rights reserved. Use of this source code is governed by a
 BSD-style license that can be found in the LICENSE file.
 -->
-<html>
+<html ng-ap>
   <head>
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
   </head>
   <body ng-cloak>
-    <div>
+    <div my-controller>
       <div class="well">
-        <span><a href="#/active">Active</a></span> |
-        <span><a href="#/completed">Completed</a></span>
+        <span><a href="#/book/1/show">Book 1</a></span> |
+        <span><a href="#/book/2/show">Book 2</a></span>
       </div>
-
-      <ng-view>
-        <section my-controller>
-          <span ng-if="ctrl.myVar != null && ctrl.myVar.isNotEmpty">
-            myVar = {{ctrl.myVar}}
-          </span>
-        </section>
-      </ng-view>
+      <section>
+        <ng-view></ng-view>
+      </section>
     </div>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>

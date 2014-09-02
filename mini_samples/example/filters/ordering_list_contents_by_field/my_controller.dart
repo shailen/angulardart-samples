@@ -11,7 +11,7 @@ class User {
   User(this.firstName, this.lastName);
 }
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )

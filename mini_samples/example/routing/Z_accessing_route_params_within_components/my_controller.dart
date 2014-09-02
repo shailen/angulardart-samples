@@ -7,7 +7,7 @@ library my_controller;
 import 'package:angular/angular.dart';
 import 'book.dart' show Book;
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )

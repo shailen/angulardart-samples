@@ -5,7 +5,7 @@
 import 'package:angular/angular.dart';
 
 
-@NgController(
+@Controller(
   selector: '[my-controller]',
   publishAs: 'ctrl'
 )

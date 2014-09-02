@@ -6,7 +6,7 @@ library my_component;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'my-component',
     templateUrl: 'my_component.html',
     publishAs: 'cmp',

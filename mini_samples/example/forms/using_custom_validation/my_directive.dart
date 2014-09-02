@@ -2,7 +2,7 @@ library my_directive;
 
 import 'package:angular/angular.dart';
 
-@NgDirective(
+@Decorator(
     selector: '[ensure-unique]')
 class MyCustomFormValidator implements NgValidator {
   MyCustomFormValidator(NgModel ngModel) {
@@ -16,5 +16,5 @@ class MyCustomFormValidator implements NgValidator {
   static const List<String> TAKEN_NAMES = const ['john', 'paul', 'george',
                                                  'ringo'];
 
-  bool isValid(username) => !TAKEN_NAMES .contains(username);
+  bool isValid(username) => !TAKEN_NAMES.contains(username);
 }

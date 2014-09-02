@@ -11,7 +11,7 @@ class Book {
   Book(this.title, this.description);
 }
 
-@NgController(
+@Controller(
     selector: '[my-controller]',
     publishAs: 'ctrl'
 )

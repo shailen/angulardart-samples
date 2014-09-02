@@ -6,11 +6,10 @@ library my_component;
 
 import 'package:angular/angular.dart';
 
-@NgComponent(
+@Component(
     selector: 'my-component',
-    templateUrl: './my_component.html',
-    publishAs: 'cmp',
-    applyAuthorStyles: true
+    templateUrl: 'my_component.html',
+    publishAs: 'cmp'
 )
 class MyComponent {
   @NgOneWayOneTime('text')

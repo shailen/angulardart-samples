@@ -4,8 +4,8 @@ import 'package:angular/angular.dart';
 
 import 'dart:html' show Element, InputElement;
 
-@NgDirective(selector: '[is-palindrome]')
-class MyDirective implements NgAttachAware{
+@Decorator(selector: '[is-palindrome]')
+class MyDirective implements AttachAware{
 
   Element element;
 

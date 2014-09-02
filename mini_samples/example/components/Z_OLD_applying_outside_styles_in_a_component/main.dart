@@ -4,15 +4,13 @@
 
 import 'package:angular/angular.dart';
 import 'package:angular/application_factory.dart';
-import 'my_controller.dart';
-import 'component_one.dart';
-import 'component_two.dart';
+import 'my_controller.dart' show MyController;
+import 'my_component.dart' show MyComponent;
 
 class MyAppModule extends Module {
   MyAppModule() {
     bind(MyController);
-    bind(ComponentOne);
-    bind(ComponentTwo);
+    bind(MyComponent);
   }
 }
 

@@ -4,7 +4,7 @@ Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 for details. All rights reserved. Use of this source code is governed by a
 BSD-style license that can be found in the LICENSE file.
 -->
-<html>
+<html ng-app>
   <head>
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common.css">
@@ -23,8 +23,8 @@ BSD-style license that can be found in the LICENSE file.
       </div>
 
       <h5>Selected fruit</h5>
-      <div ng-repeat="fruit in ctrl.selectedFruits">
-        {{fruit['name']}}
+      <div ng-repeat="fruit in ctrl.fruits">
+        <div ng-if="fruit['selected']">{{fruit['name']}}</div>
       </div>
     </div>
 

@@ -3,6 +3,7 @@ library my_router;
 import 'package:angular/angular.dart';
 
 void myRouteInitializer(Router router, RouteViewFactory views) {
+
   views.configure({
     'book': ngRoute(
         path: '/book/:bookId',
